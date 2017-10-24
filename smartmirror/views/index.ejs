@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+  
+    <p><%= data.results.channel.location.city %></p>
+    <p><%= data.results.channel.item.condition.text %></p> 
+
+    <% for(var i=0; i<JSON.stringify(events).length; i++) {%>
+      <td><%= events[i].id %></td>
+    <% } %>
+  </body>
+</html>
